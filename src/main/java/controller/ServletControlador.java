@@ -17,9 +17,7 @@ import model.Auto;
 public class ServletControlador extends HttpServlet{
         
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-            
-        
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {     
 //        try {
 //            List<Auto> autos;
 //            autos = new AutoDAO().seleccionar();
@@ -52,6 +50,7 @@ public class ServletControlador extends HttpServlet{
             accionDefault(req,res);
          }
         }catch (Exception e){
+            System.out.println("Problemas en el DoGet");
             System.out.println(e);
         }
     }
@@ -76,6 +75,7 @@ public class ServletControlador extends HttpServlet{
              accionDefault(req,res);
          }
         }catch(Exception e){
+            System.out.println("Problemas en el DoPost");
             System.out.println(e);
         }
     }

@@ -112,6 +112,7 @@ public class AutoDAO {
                 close(stmt);
                 close(conn);
             } catch (SQLException ex) {
+                System.out.println("Problemas en Eliminar");
                 ex.printStackTrace(System.out);
             }
         }
@@ -144,6 +145,7 @@ public class AutoDAO {
 
             }
         } catch (SQLException ex) {
+            System.out.println("Problemas en seleccionar por id");
             ex.printStackTrace(System.out);
         } finally {
             try {
@@ -180,6 +182,7 @@ public class AutoDAO {
                 close(stmt);
                 close(conn);
             } catch (SQLException ex) {
+                System.out.println("Problemas en actualizar");
                 ex.printStackTrace(System.out);
             }
         }
