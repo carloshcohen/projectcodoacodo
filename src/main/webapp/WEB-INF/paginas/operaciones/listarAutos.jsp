@@ -23,7 +23,7 @@
                                 <th>Puertas</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="table-group-divider">
                             <c:forEach var="auto" items="${autos}" varStatus="status">
                                 <tr>
                                     <td>${status.count}</td>
